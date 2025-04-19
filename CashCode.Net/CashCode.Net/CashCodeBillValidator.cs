@@ -505,14 +505,13 @@ namespace CashCode.Net
         // Таблица кодов валют
         private static Dictionary<int, int> _defaultCashCodeTable = new Dictionary<int, int>()
         {
-            { 0x02, 10 },               // 10 р.
-            { 0x03, 50 },               // 50 р.
-            { 0x04, 100 },              // 100 р.
-            { 0x0c, 200 },              // 200 р.
-            { 0x05, 500 },              // 500 р.
-            { 0x06, 1000 },             // 1000 р.
-            { 0x0d, 2000 },             // 2000 р.
-            { 0x07, 5000 }              // 5000 р.
+            { 0x02, 5 },               // 10 р.
+            { 0x03, 10 },               // 50 р.
+            { 0x04, 20 },              // 100 р.
+            { 0x0c, 50 },              // 200 р.
+            { 0x05, 100 },              // 500 р.
+            { 0x06, 200 },             // 1000 р.
+            { 0x0d, 500 },             // 2000 р.
         };
         private byte[] _packet;
         private readonly object _dataSyncRoot = new object();

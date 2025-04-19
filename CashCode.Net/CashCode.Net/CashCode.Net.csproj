@@ -2,7 +2,7 @@
   
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net4;net45</TargetFrameworks>
+    <TargetFrameworks>net9;</TargetFrameworks>
     <Description>Библиотека работы с купюроприемником Bill Validator with Stacker</Description>
     <Authors>Strukachev D., Tikhonov K.</Authors>
     <Copyright>Copyright © Strukachev D. 2010</Copyright>
@@ -29,5 +29,9 @@
     <EmbeddedResource Update="Properties\Resource.ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="9.0.4" />
   </ItemGroup>
 </Project>
